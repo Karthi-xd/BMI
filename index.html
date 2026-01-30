@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p>Click the button  to calculate  BMI</p>
+        <button class="main-btn" onclick="openModal()">Calculate BMI</button>
+    </div>
+
+   
+    <div id="bmiModal" class="modal">
+        <div class="modal-content">
+            <h2>Enter your details</h2>
+
+            <input  id="weight" placeholder="Weight (kg)">
+            <input  id="height" placeholder="Height (cm)">
+
+            <button onclick="calculateBMI()">Calculate</button>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #382727, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #555;
+  font-size: 14px;
+}
+
+.main-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #050302;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: #8287a0;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 35px;           /
+  width: 400px;            
+  max-width: 90%;          
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content input {
+  width: 95%;
+  padding: 10px;         
+  margin: 10px 0;
+  font-size: 16px;         
+}
+
+.modal-content button {
+  padding: 10px 16px;      
+  margin: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.modal-content button:first-of-type {
+  background: #667eea;
+  color: white;
+}
+
+.close-btn {
+  background: #ddd;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: 600;
+}
